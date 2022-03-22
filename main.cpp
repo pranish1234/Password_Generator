@@ -11,6 +11,9 @@ std::string characters_alpha[9] = {
     "f",
     "g",
 };
+std::string final_pass[10] = {
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"};
+
 std::string characters_signs[9] = {"_", "@"};
 
 /*number/password generator*/
@@ -20,7 +23,7 @@ public:
     randomnum()
     {
         int password_index = (rand() % 9) + 1;
-        std::cout << characters_alpha[password_index] + characters_signs[password_index];
+        std::cout << characters_alpha[password_index] + characters_signs[password_index] + final_pass[password_index];
     }
 };
 
